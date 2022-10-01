@@ -71,19 +71,19 @@ span{
     padding: 100px;
 }
 .home-section{
-    margin-left: 4  0px !important;
+    margin-left: 0px !important;
     height: 300px;
     width: 100%;
     border-left: 13px solid  rgb(82, 95, 140);
     text-align: left;
     padding:25px 0  0 25px;
-    
+    flex-wrap: wrap;
 }
 .home-section h1{
     color:  rgb(82, 95, 140);
     font-family:"Poppins Bold",sans-serif;
     font-size: 50px;
-    padding-bottom: 13px;
+    padding-bottom: 20px;
     letter-spacing: 1.15px;
 }
 
@@ -92,14 +92,45 @@ span{
     font-family:"Poppins Bold",sans-serif;
     font-size: 19px;
     padding-bottom: 13px;
+    flex-wrap:wrap
 }
 
 .home-icon{
     display: flex;
-    float: left;
 }
-
+.home-icon a{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(237, 238, 239, 0.8);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 15px 22px 0;
+    text-decoration: none;
+    color:  rgb(82, 95, 140);
+}
 .home-icon svg{
-    height: fit-content;
-    padding-right: 0px;
+    height: 1.5em;
+    width: 1.5em;
+    text-decoration: none;
+}
+.home-icon a:hover{
+    background-color:rgb(82, 95, 140);
+    color:rgba(237, 238, 239, 0.8) !important;
+}
+.home-button a{
+    height: 50px !important;
+    width: 110px !important;
+    background-color: rgb(82, 95, 140);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(237, 238, 239, 0.8) !important;
+    text-decoration: none !important;
+    font-family:"Poppins Regular",sans-serif;
+}
+.home-button a:hover{
+    background-color:rgba(237, 238, 239, 0.8);
+    color: rgb(82, 95, 140) !important;
 }

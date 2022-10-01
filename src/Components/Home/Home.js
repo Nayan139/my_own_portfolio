@@ -2,10 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Facebook from "../../Assets/svg/Facebook";
-import Github from "../../Assets/svg/Github";
-import Instagram from "../../Assets/svg/Instagram";
-import Linkedin from "../../Assets/svg/Linkedin";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { AiOutlineGithub } from "react-icons/ai";
 import "./Home.css";
 
 const Home = () => {
@@ -39,19 +38,21 @@ const Home = () => {
           <p>FULL-STACK | REACT | NODE | JAVASCRIPT DEVELOPER</p>
           <div className="home-icon">
             <a href="#">
-              <Facebook />
+              <FaFacebookF />
             </a>
             <a href="#">
-              <Instagram />
+              <BsInstagram />
             </a>
             <a href="#">
-              <Linkedin />
+              <FaLinkedinIn />
             </a>
             <a href="#">
-              <Github />
+              <AiOutlineGithub />
             </a>
           </div>
-          llok
+          <div className="home-button">
+            <a href="#">Hire Me</a>
+          </div>
         </div>
       </div>
     </div>
