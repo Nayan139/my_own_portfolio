@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
+import Profile from "../../Assets/Images/profile.jpg";
 import "./Home.css";
 
 const Home = () => {
@@ -53,6 +54,10 @@ const Home = () => {
           <div className="home-button">
             <a href="#">Hire Me</a>
           </div>
+        </div>
+        <div className="home-picture">
+          {/* <img src={Profile} alt="nyn" /> */}
+          {/* <div className="home-picture-main"></div> */}
         </div>
       </div>
     </div>

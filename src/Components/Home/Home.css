@@ -2,6 +2,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
 }
 .home-container {
     position: relative; 
@@ -133,4 +134,16 @@ span{
 .home-button a:hover{
     background-color:rgba(237, 238, 239, 0.8);
     color: rgb(82, 95, 140) !important;
+}
+ .home-picture {
+    margin: 35px 0 0 0;
+    height: 350px;
+    width: 500px;
+    border: 10px solid  rgb(82, 95, 140);
+    border-radius: 100%;
+    background-image: url("../../Assets/Images/profile.jpg");
+    background-size:cover;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
