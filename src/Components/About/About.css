@@ -1,0 +1,108 @@
+.about-container{
+    width: 100%;
+    height: auto;
+    background: rgb(82, 95, 140);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-align: center;
+    align-items: center;
+    padding: 2rem;
+    color: rgb(237, 238, 239);
+}
+.about-section{
+    display: flex;
+    position: relative;
+    box-pack: center;
+    justify-content: center;
+    text-align: center;
+    box-align: center;
+    align-items: center;
+}
+.about-section h1{
+    font-family: "Poppins Semi-bold",sans-serif;
+    font-size: 5rem;
+    color: rgba(197, 191, 188, 0.1);
+    position: relative;
+    margin-bottom: 1.6rem;
+}
+.about-section::after{
+    position: absolute;
+    width: 100%;
+    content: "KNOW ME MORE";
+    margin: 0px;
+    font-family:sans-serif;
+    font-size: 2rem;
+    color: rgb(237, 238, 239);
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1.6rem;
+    align-items: center;
+    width: 100%;
+    text-align:left
+}
+.about-left{
+    max-width: 45%;
+}
+.article{
+    font-family: "Poppins Regular",sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-top: 1.2rem;
+    color: rgba(213, 212, 218, 0.8);
+    letter-spacing: 0px;
+}
+.about-main{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(237, 238, 239);
+    padding: 0.5rem;
+}
+.about-heading{
+    margin-right: 0.3rem;
+    font-family: "Poppins Medium",sans-serif;
+}
+.about-value{
+    color: rgba(213, 212, 218, 0.8);
+    font-family: "Poppins Regular",sans-serif;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+}
+.about-button{
+    text-decoration: none;
+    background-color: rgb(237, 238, 239);
+    color: rgb(82, 95, 140);
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.3rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(rgba(0, 0, 0, 0.23) 0px 4px 10px);
+}
+.about-btn-name{
+    font-size: 1rem;
+    margin-right: 0.8rem;
+    font-family: "Poppins Light",sans-serif !important;
+    letter-spacing: 1px;
+}
+.about-button svg{
+    height: 1.2rem;
+    margin-top: 5px;
+}
+.about-button:hover{
+    color:rgb(237, 238, 239);  
+    background-color: rgb(82, 95, 140);
+}
