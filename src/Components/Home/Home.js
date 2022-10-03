@@ -51,7 +51,9 @@ const Home = () => {
             </a>
           </div>
           <div className="home-button">
-            <a href="#">Hire Me</a>
+            <a href="https://www.udemy.com/certificate/UC-7b02833b-d6a1-487b-ab5c-d4df5a4a4bae/">
+              Hire Me
+            </a>
           </div>
         </div>
         <div className="home-picture"></div>
