@@ -39,7 +39,6 @@ const Summary = () => {
             </div>
             <a
               href="https://www.udemy.com/certificate/UC-7b02833b-d6a1-487b-ab5c-d4df5a4a4bae/"
-              target="_blank"
               class="certificate-btn"
             >
               View Certificate
@@ -57,7 +56,6 @@ const Summary = () => {
             </div>
             <a
               href="https://www.udemy.com/certificate/UC-5999d1a4-753a-448e-9d5b-2f07577df2a9/"
-              target="_blank"
               class="certificate-btn"
             >
               View Certificate
