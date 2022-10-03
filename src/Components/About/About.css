@@ -50,6 +50,10 @@
 .about-left{
     max-width: 45%;
 }
+.about-left h2{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
 .article{
     font-family: "Poppins Regular",sans-serif;
     font-size: 1.2rem;
