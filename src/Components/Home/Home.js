@@ -9,10 +9,10 @@ import nayan from "../../Assets/Images/profile.jpg";
 import "./Home.css";
 
 const Home = () => {
-  let listener = null;
   const [scrollState, setScrollState] = useState(false);
 
   useEffect(() => {
+    let listener = null;
     listener = document.addEventListener("scroll", (e) => {
       var scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 120) {
