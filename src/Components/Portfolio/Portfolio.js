@@ -30,6 +30,7 @@ const Portfolio = () => {
               href="https://nayan-bhakhar-fullstack.netlify.app/"
               className="portfolio-link"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="card" data-category="SEE LIVE">
                 <img src={portfolioSite} className="card-img" alt="portfolio" />
