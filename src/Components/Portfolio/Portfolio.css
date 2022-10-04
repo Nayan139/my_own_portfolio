@@ -1,0 +1,103 @@
+* {
+    font-family: "Poppins Regular",sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-section{
+    width: 100%;
+    height: auto;
+    background: rgb(82, 95, 140);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 8rem;
+    color: rgb(237, 238, 239);
+}
+.portfolio-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.header-title{
+    font-family: "Poppins Semi-Bold",sans-serif;
+    font-size: 5rem;
+    color: rgba(197, 191, 188, 0.1);
+    position: relative;
+    margin-bottom: 2rem;
+}
+.header-title::after{
+    position: absolute;
+    width: 100%;
+    content: "MY WORK";
+    margin: 0px;
+    font-size: 2rem;
+    color: rgb(237, 238, 239);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.portfolio-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-card{
+    display: flex;
+    flex: 1 1 0%;
+    margin: 1.2rem;
+    border-radius: 10px;
+    background-color: rgb(237, 238, 239);
+}
+.portfolio-link{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: rgb(50 50 50 / 38%) 0px 0px 9px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.card{
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+}
+.card-img{
+    position: absolute;
+    inset: 0px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear 0s;
+}
+.card::after{
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0px;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc(100% - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color: rgb(82, 95, 140);
+    box-sizing: border-box;
+}
+.card-desc{
+    padding: 20px 30px 30px;
+    background-color: rgb(237, 238, 239);
+}
+.desc{
+    color: rgb(82, 95, 140);
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: justify;
+    font-family: "Poppins Bold",sans-serif !important;
+}
