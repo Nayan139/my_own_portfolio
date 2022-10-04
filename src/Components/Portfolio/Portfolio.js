@@ -16,7 +16,7 @@ const Portfolio = () => {
               className="portfolio-link"
             >
               <div className="card" data-category="SEE LIVE">
-                <img src={covidTracker} className="card-img" />
+                <img src={covidTracker} className="card-img" alt="tracker" />
               </div>
               <div className="card-desc">
                 <h5 className="desc">
@@ -29,9 +29,10 @@ const Portfolio = () => {
             <a
               href="https://nayan-bhakhar-fullstack.netlify.app/"
               className="portfolio-link"
+              target="_blank"
             >
               <div className="card" data-category="SEE LIVE">
-                <img src={portfolioSite} className="card-img" />
+                <img src={portfolioSite} className="card-img" alt="portfolio" />
               </div>
               <div className="card-desc">
                 <h5 className="desc">
