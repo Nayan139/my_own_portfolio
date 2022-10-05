@@ -48,25 +48,25 @@ const Home = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              href="#features"
+              href="#about"
               className={scrollState ? "nav-link headder" : "me-last"}
             >
               About
             </Nav.Link>
             <Nav.Link
-              href="#pricing"
+              href="#summary"
               className={scrollState ? "nav-link headder" : "me-last"}
             >
-              Resume
+              Summary
             </Nav.Link>
             <Nav.Link
-              href="#pricing1"
+              href="#portfolio"
               className={scrollState ? "nav-link headder" : "me-last"}
             >
               Portfolio
             </Nav.Link>
             <Nav.Link
-              href="#pricing2"
+              href="#contact"
               className={scrollState ? "nav-link headder" : "me-last"}
             >
               Contact
@@ -74,7 +74,7 @@ const Home = () => {
           </Nav>
         </Container>
       </Navbar>
-      <div className="home-container">
+      <div className="home-container" id="home">
         <div className="home-main-conatiner">
           <div className="home-section">
             <h1 className="home-name">I AM NAYAN BHAKHAR</h1>

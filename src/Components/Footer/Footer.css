@@ -1,0 +1,12 @@
+.footer-main{
+    width: 100%;
+    height: auto;
+    background: rgb(82, 95, 140);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    color: rgb(237, 238, 239);
+}

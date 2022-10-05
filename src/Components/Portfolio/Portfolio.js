@@ -5,7 +5,7 @@ import portfolioSite from "../../Assets/Images/portfolioSite.png";
 
 const Portfolio = () => {
   return (
-    <div>
+    <div id="portfolio">
       <div className="portfolio-section">
         <div className="portfolio-header"></div>
         <h1 className="header-title">PORTFOLIO</h1>

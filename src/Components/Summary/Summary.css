@@ -195,3 +195,22 @@
     font-weight: 900;
     font-family: "Poppins Bold",sans-serif;
 }
+.experience-box {
+    display: flex;
+    width: 750px;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(82, 95, 140);
+    color: rgb(237, 238, 239);
+    margin: 1.5rem 0px;
+}
+.exp-name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: right;
+}
+.exp-desc{
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    text-align: right;
+}
