@@ -82,16 +82,28 @@ const Home = () => {
               FULL-STACK | REACT | NODE | JAVASCRIPT DEVELOPER
             </p>
             <div className="home-icon">
-              <a href="https://www.udemy.com/certificate/UC-7b02833b-d6a1-487b-ab5c-d4df5a4a4bae/">
+              <a
+                href="https://www.facebook.com/nayanv.bhakhar"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaFacebookF />
               </a>
-              <a href="https://www.udemy.com/certificate/UC-7b02833b-d6a1-487b-ab5c-d4df5a4a4bae/">
+              <a
+                href="https://instagram.com/nynbhakhar?igshid=YmMyMTA2M2Y="
+                target="_blank"
+                rel="noreferrer"
+              >
                 <BsInstagram />
               </a>
-              <a href="https://www.udemy.com/certificate/UC-7b02833b-d6a1-487b-ab5c-d4df5a4a4bae/">
+              <a
+                href="https://www.linkedin.com/in/nayan-bhakhar-612208194/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedinIn />
               </a>
-              <a href="https://www.udemy.com/certificate/UC-7b02833b-d6a1-487b-ab5c-d4df5a4a4bae/">
+              <a href="https://github.com/" target="_blank" rel="noreferrer">
                 <AiOutlineGithub />
               </a>
             </div>
