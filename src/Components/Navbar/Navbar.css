@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    margin-right: 2rem !important;
+}
+.css-19q7eq1-MuiTypography-root-MuiLink-root{
+    text-decoration: none !important;
+    font-family: "Poppins Regular";
+    font-size: "1rem";
+    color: "white";
+    padding:  "1rem",
+}
+.css-19q7eq1-MuiTypography-root-MuiLink-root:hover{
+    color:white;
+}
+
+@media screen and (max-width:600px) {
+     .css-11b3ww9-MuiPaper-root-MuiAppBar-root{
+        display: flex !important;
+    }
+     .css-pxcprl-MuiToolbar-root{
+        justify-content: space-between !important;
+    }
+}

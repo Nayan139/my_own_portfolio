@@ -5,16 +5,18 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Summary from "./Components/Summary/Summary";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <About />
+      <Navbar />
+      {/* <Home /> */}
+      {/* <About />
       <Summary />
       <Portfolio />
       <ContactUS />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
