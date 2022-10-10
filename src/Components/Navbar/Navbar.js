@@ -69,7 +69,7 @@ function Navbar(props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav">
+      <AppBar component="nav" className="nav-main">
         <Toolbar
           sx={{ alignItems: "center", textAlign: "left", height: "80px" }}
         >
