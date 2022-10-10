@@ -1,14 +1,6 @@
 .App {
   text-align: center;
 }
-.MuiBox-root .MuiBox-root {
-  margin: 0px;
-  padding: 0px;
-}
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root {
-  height: 80px !important;
-  background-color: rgb(82, 95, 140) !important;
-}
 
 .App-logo {
   height: 40vmin;

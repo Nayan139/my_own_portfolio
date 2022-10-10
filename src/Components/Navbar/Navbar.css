@@ -2,7 +2,15 @@
     margin: 0px;
     padding: 0px;
 }
-
+.MuiBox-root .MuiBox-root {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+.MuiBox-root .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
+    height: 80px !important;
+    background-color: rgb(82, 95, 140) !important;
+  }
 .header{
     margin-right: 2rem !important;
 }
