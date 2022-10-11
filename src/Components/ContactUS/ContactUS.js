@@ -1,7 +1,29 @@
 import React from "react";
 import "./ContactUS.css";
+import * as Yup from "yup";
+import { ErrorMessage, Field, useFormik } from "formik";
+
+const SignupSchema = Yup.object().shape({
+  name: Yup.string()
+    .min(2, "Too Short!")
+    .max(70, "Too Long!")
+    .required("Required"),
+  email: Yup.string().email("Invalid email").required("Required"),
+  isMessage: Yup.string().required("Required"),
+});
 
 const ContactUS = () => {
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      isMessage: "",
+    },
+    validationSchema: SignupSchema,
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
   return (
     <div className="contact-container" id="contact">
       <div className="contact-title">
@@ -11,22 +33,37 @@ const ContactUS = () => {
         className="contact-main"
         style={{ width: "600px", marginTop: "1.25chrem" }}
       >
-        <div className="app-footer-form">
+        <form onSubmit={formik.handleSubmit} className="app-footer-form">
           <div>
-            <input type="text" placeholder="Your Name *" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value={formik.values.name}
+              onChange={formik.handleChange}
+              placeholder="Your Name *"
+            />
           </div>
           <div className="app-flex">
-            <input type="text" placeholder="Your Email *" />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              placeholder="Your Email *"
+            />
           </div>
           <div className="app-flex">
-            <textarea type="text" placeholder="Write a message *" />
+            <textarea type="text" />
           </div>
           <div className="app-flex-btn">
-            <button className="btn-submit">Submit</button>
+            <button type="submit" className="btn-submit">
+              Submit
+            </button>
           </div>
-        </div>
+        </form>
       </div>
-      
     </div>
   );
 };
