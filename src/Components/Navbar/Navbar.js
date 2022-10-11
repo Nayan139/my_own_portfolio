@@ -38,7 +38,7 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2, color: "rgb(82, 95, 140)" }}>
         Nayan
       </Typography>
       <Divider />
@@ -107,17 +107,7 @@ function Navbar(props) {
           </Typography>
           <Box className="header">
             {navItems.map((item) => (
-              <Link
-                href={item.link}
-                className="main-header"
-                sx={{
-                  fontFamily: "Poppins Regular",
-                  fontSize: "1rem",
-                  color: "white",
-                  paddingRight: "0.5rem",
-                  textDecoration: "none",
-                }}
-              >
+              <Link href={item.link} className="main-header">
                 {item.name}
               </Link>
             ))}

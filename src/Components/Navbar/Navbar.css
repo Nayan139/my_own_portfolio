@@ -17,19 +17,34 @@
 .header{
     margin-right: 2rem !important;
 }
+.header a{
+    font-family: "Poppins Regular";
+    font-size: "1rem";
+    color: "white";
+    padding-right: "0.5rem";
+    text-decoration: "none";
+}
 .drawer-Item{
     justify-content:center !important;
     margin-bottom: 1rem;
 }
-.css-19q7eq1-MuiTypography-root-MuiLink-root{
+.drawer-Item a{
+    font-family: "Poppins Regular";
+    font-size: "1rem";
+    color: rgb(82, 95, 140) !important ;
+    padding-right: "0.5rem";
+    text-decoration: "none";
+}
+.main-header{
     text-decoration: none !important;
+   color: white !important;
+}
+.main-list-item{
     font-family: "Poppins Regular";
     font-size: "1rem";
     color: "white";
-    padding:  "1rem",
-}
-.css-19q7eq1-MuiTypography-root-MuiLink-root:hover{
-    color:white;
+    padding-right: "0.5rem";
+    text-decoration: "none";
 }
 
 @media screen and (max-width:600px) {
