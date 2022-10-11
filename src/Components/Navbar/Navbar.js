@@ -44,7 +44,7 @@ function Navbar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item.name} disablePadding>
+          <ListItem key={item.name} disablePadding className="drawer-Item">
             <Link
               href={item.link}
               sx={{
@@ -77,6 +77,7 @@ function Navbar(props) {
             color="inherit"
             aria-label="open drawer"
             edge="start"
+            className="svg-class"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
@@ -108,6 +109,7 @@ function Navbar(props) {
             {navItems.map((item) => (
               <Link
                 href={item.link}
+                className="main-header"
                 sx={{
                   fontFamily: "Poppins Regular",
                   fontSize: "1rem",

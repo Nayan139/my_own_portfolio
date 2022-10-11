@@ -10,11 +10,14 @@
 .nav-main {
     height: 80px !important ;
     background-color: rgb(82, 95, 140) !important 
-  }
+}
+.main-header{
+    padding-right: 1.5rem !important;
+}
 .header{
     margin-right: 2rem !important;
 }
-.css-1nxmd3h-MuiListItem-root{
+.drawer-Item{
     justify-content:center !important;
     margin-bottom: 1rem;
 }
@@ -28,9 +31,6 @@
 .css-19q7eq1-MuiTypography-root-MuiLink-root:hover{
     color:white;
 }
-.css-19q7eq1-MuiTypography-root-MuiLink-root{
-    padding-right: 1.5rem !important;
-}
 
 @media screen and (max-width:600px) {
      .css-11b3ww9-MuiPaper-root-MuiAppBar-root{
@@ -42,7 +42,7 @@
     .header{
         display: none;
     }
-    .css-6iz4mj-MuiButtonBase-root-MuiIconButton-root{
+    .svg-class{
         width: 150px;
     }
 }
