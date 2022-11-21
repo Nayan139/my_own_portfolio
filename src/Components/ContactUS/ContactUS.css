@@ -95,11 +95,34 @@ button{
     border-radius: 10px;
     border-color: inherit;
 }
-.btn-submit:hover{
-    margin: 0.75rem 0;
-    transition: all 0.3s ease-in-out;
-    color:rgb(82, 95, 140);
-    background-color:  white;
-    border-radius: 10px;
-    border-color: white;
+
+.label{
+    display: flex;
+    justify-content: start;
+    color: rgb(82, 95, 140);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.label-msg{
+    color: rgb(82, 95, 140);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.errorMsg{
+    display: flex;
+    justify-content: start;
+    color: #cc4747;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.css-efvcc7-MuiPaper-root-MuiAlert-root {
+    background-color:rgb(82, 95, 140) !important;
+    color:#ffff !important
+}
+
+.css-efvcc7-MuiPaper-root-MuiAlert-root .MuiAlert-icon {
+    color:#ffff !important
 }

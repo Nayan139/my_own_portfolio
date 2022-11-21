@@ -1,29 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./ContactUS.css";
 import * as Yup from "yup";
-import { ErrorMessage, Field, useFormik } from "formik";
+import { Formik } from "formik";
+import { Alert } from "@mui/material";
 
 const SignupSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(2, "Too Short!")
-    .max(70, "Too Long!")
-    .required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-  isMessage: Yup.string().required("Required"),
+  name: Yup.string().max(70, "Too Long!").required("Required"),
+  email: Yup.string().email("Please enter valid email").required("Required"),
+  isMessage: Yup.string().min(30, "Too Short!").required("Required"),
 });
 
 const ContactUS = () => {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      isMessage: "",
-    },
-    validationSchema: SignupSchema,
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
+  const [success, setSuccess] = useState(false);
+
   return (
     <div className="contact-container" id="contact">
       <div className="contact-title">
@@ -33,39 +23,95 @@ const ContactUS = () => {
         className="contact-main"
         style={{ width: "600px", marginTop: "1.25chrem" }}
       >
-        <form onSubmit={formik.handleSubmit} className="app-footer-form">
-          <div>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={formik.values.name}
-              onChange={formik.handleChange}
-              placeholder="Your Name *"
-            />
-          </div>
-          <div className="app-flex">
-            <input
-              type="text"
-              id="email"
-              name="email"
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              placeholder="Your Email *"
-            />
-          </div>
-          <div className="app-flex">
-            <textarea type="text" />
-          </div>
-          <div className="app-flex-btn">
-            <button type="submit" className="btn-submit">
-              Submit
-            </button>
-          </div>
-        </form>
+        <Formik
+          initialValues={{
+            name: "",
+            email: "",
+            isMessage: "",
+          }}
+          validationSchema={SignupSchema}
+          onSubmit={async (values, { resetForm }) => {
+            console.log("@@@@@@@@@@@@@@@@@", values);
+            const data = {
+              from_name: values.name,
+              message: `${values.isMessage}  Email:- ${values.email}`,
+              reply_to: "nayanbhakhar7075@gmail.com",
+            };
+            await emailjs
+              .send(
+                "service_bpbse9j",
+                "template_475qphh",
+                data,
+                "fsKcClqu8ZQoi6-p9"
+              )
+              .then(
+                (result) => {
+                  console.log("sucess", result.text);
+                  result.text === "OK" ? setSuccess(true) : setSuccess(false);
+                  resetForm();
+                },
+                (error) => {
+                  setSuccess(false);
+                }
+              );
+          }}
+        >
+          {({ values, errors, handleChange, handleSubmit }) => (
+            <form onSubmit={handleSubmit} className="app-footer-form">
+              <div>
+                <label className="label">Name </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  value={values.name}
+                  onChange={handleChange}
+                />
+              </div>
+              <p className="errorMsg">{errors.name}</p>
+              <div>
+                <label className="label">Email </label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
+                />
+                <p className="errorMsg">{errors.email}</p>
+              </div>
+              <div>
+                <label className="label">Message </label>
+                <textarea
+                  type="text"
+                  id="isMessage"
+                  name="isMessage"
+                  value={values.isMessage}
+                  onChange={handleChange}
+                />
+                <p className="errorMsg">{errors.isMessage}</p>
+              </div>
+              <div className="app-flex-btn">
+                <button type="submit" className="btn-submit">
+                  Submit
+                </button>
+                {success ? (
+                  <Alert onClose={() => setSuccess(false)}>
+                    This is a success alert — check it out!
+                  </Alert>
+                ) : (
+                  ""
+                )}
+              </div>
+            </form>
+          )}
+        </Formik>
       </div>
     </div>
   );
 };
 
 export default ContactUS;
+{
+  /* <p className="label-msg">Message Sent Successfully</p> */
+}

@@ -2,9 +2,13 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
+  const date = new Date();
   return (
     <div className="footer-main">
-      <div>Copyright © 2022 NayanBhakhar, Designed By NayanBhakhar.</div>
+      <div>
+        Copyright © {date.getFullYear()} NayanBhakhar, Designed By Nayan
+        Bhakhar.
+      </div>
     </div>
   );
 };
