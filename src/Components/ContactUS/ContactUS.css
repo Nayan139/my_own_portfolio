@@ -98,7 +98,7 @@ button{
 
 .label{
     display: flex;
-    justify-content: start;
+    justify-content: left;
     color: rgb(82, 95, 140);
     font-size: 1.2rem;
     font-weight: bold;
@@ -112,7 +112,7 @@ button{
 
 .errorMsg{
     display: flex;
-    justify-content: start;
+    justify-content: left;
     color: #cc4747;
     font-size: 1rem;
     font-weight: 500;
