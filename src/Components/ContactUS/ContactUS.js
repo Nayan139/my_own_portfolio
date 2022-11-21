@@ -97,7 +97,7 @@ const ContactUS = () => {
                 </button>
                 {success ? (
                   <Alert onClose={() => setSuccess(false)}>
-                    This is a success alert — check it out!
+                    Message Sent Successfully.
                   </Alert>
                 ) : (
                   ""
