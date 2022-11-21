@@ -112,6 +112,3 @@ const ContactUS = () => {
 };
 
 export default ContactUS;
-{
-  /* <p className="label-msg">Message Sent Successfully</p> */
-}
