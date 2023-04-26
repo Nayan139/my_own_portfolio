@@ -1,5 +1,7 @@
 import React from "react";
 import { SiUdemy } from "react-icons/si";
+import { FaFreeCodeCamp } from "react-icons/fa";
+
 import "./Summary.css";
 
 const Summary = () => {
@@ -49,6 +51,17 @@ const Summary = () => {
               </p>
             </div>
           </div>
+          <div className="experience-box">
+            <div>
+              <div className="education-detail"> March,2023 – Present</div>
+            </div>
+            <div>
+              <h3 className="exp-name">CoderInfosys | Surat, India</h3>
+              <p className="exp-desc">
+                I'm working as MERN stack developer at CoderInfosys.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="certificate-main">
           <h2>CERTIFICATION</h2>
@@ -57,14 +70,14 @@ const Summary = () => {
               <div>
                 <div className="list-top">
                   <SiUdemy />
-                  <div className="list-name">Udemy</div>
+                  <div className="list-name">freeCodeCamp</div>
                 </div>
               </div>
               <div class="certificate-desc">
-                The Complete JavaScript Course 2021: From Zero to Expert!
+                The Complete Responsive Web Design
               </div>
               <a
-                href="https://www.udemy.com/certificate/UC-7b02833b-d6a1-487b-ab5c-d4df5a4a4bae/"
+                href="https://www.freecodecamp.org/certification/fcc009dac7f-dca3-4376-9894-186f0cded89b/responsive-web-design"
                 class="certificate-btn"
                 target="_blank"
                 rel="noreferrer"
@@ -84,6 +97,25 @@ const Summary = () => {
               </div>
               <a
                 href="https://www.udemy.com/certificate/UC-5999d1a4-753a-448e-9d5b-2f07577df2a9/"
+                class="certificate-btn"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Certificate
+              </a>
+            </div>
+            <div className="list-main">
+              <div>
+                <div className="list-top">
+                  <SiUdemy />
+                  <div className="list-name">Udemy</div>
+                </div>
+              </div>
+              <div class="certificate-desc">
+                The Complete JavaScript Course 2023: From Zero to Expert!
+              </div>
+              <a
+                href="https://drive.google.com/file/d/1Knh6bAq0jpwZlbKcFOOnco8EXCArvfGK/view"
                 class="certificate-btn"
                 target="_blank"
                 rel="noreferrer"

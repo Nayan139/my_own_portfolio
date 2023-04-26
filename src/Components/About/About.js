@@ -33,7 +33,7 @@ const About = () => {
             </div>
             <div className="about-main">
               <div className="about-heading">Age:</div>
-              <div className="about-value">22</div>
+              <div className="about-value">23</div>
             </div>
             <div className="about-main">
               <div className="about-heading">Phone:</div>
