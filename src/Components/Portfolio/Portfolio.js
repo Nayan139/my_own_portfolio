@@ -3,6 +3,7 @@ import "./Portfolio.css";
 import covidTracker from "../../Assets/Images/covidTracker.png";
 import portfolioSite from "../../Assets/Images/portfolioSite.png";
 import gGallery from "../../Assets/Images/gGallery.png";
+import dragDropTodo from "../../Assets/Images/dragDropTodo.png";
 
 const Portfolio = () => {
   return (
@@ -13,17 +14,18 @@ const Portfolio = () => {
         <div className="portfolio-cards">
           <div className="portfolio-card">
             <a
-              href="https://covid-tracker-nb.netlify.app/"
+              href="https://drag-drop-nb.netlify.app/"
               className="portfolio-link"
               target="_blank"
               rel="noreferrer"
             >
               <div className="card" data-category="SEE LIVE">
-                <img src={covidTracker} className="card-img" alt="tracker" />
+                <img src={dragDropTodo} className="card-img" alt="tracker" />
               </div>
               <div className="card-desc">
                 <h5 className="desc">
-                  Responsive Covid Trcker API using React Hooks,Material-UI
+                  Drag and Drop Todo Task [Todo,In Progress,Completed] with
+                  delete and restore functionality.
                 </h5>
               </div>
             </a>
@@ -59,6 +61,23 @@ const Portfolio = () => {
                 <h5 className="desc">
                   G-Gallary Site using Firebase, React hooks and Styled
                   component
+                </h5>
+              </div>
+            </a>
+          </div>
+          <div className="portfolio-card">
+            <a
+              href="https://covid-tracker-nb.netlify.app/"
+              className="portfolio-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="card" data-category="SEE LIVE">
+                <img src={covidTracker} className="card-img" alt="tracker" />
+              </div>
+              <div className="card-desc">
+                <h5 className="desc">
+                  Responsive Covid Trcker API using React Hooks,Material-UI
                 </h5>
               </div>
             </a>
