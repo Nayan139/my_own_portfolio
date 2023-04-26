@@ -69,7 +69,7 @@ const Summary = () => {
             <div className="list-main">
               <div>
                 <div className="list-top">
-                  <SiUdemy />
+                  <FaFreeCodeCamp />
                   <div className="list-name">freeCodeCamp</div>
                 </div>
               </div>
