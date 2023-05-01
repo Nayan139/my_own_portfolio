@@ -4,6 +4,7 @@ import covidTracker from "../../Assets/Images/covidTracker.png";
 import portfolioSite from "../../Assets/Images/portfolioSite.png";
 import gGallery from "../../Assets/Images/gGallery.png";
 import dragDropTodo from "../../Assets/Images/dragDropTodo.png";
+import udhariBook from "../../Assets/Images/udhariBook.png";
 
 const Portfolio = () => {
   return (
@@ -12,6 +13,24 @@ const Portfolio = () => {
         <div className="portfolio-header"></div>
         <h1 className="header-title">PORTFOLIO</h1>
         <div className="portfolio-cards">
+          <div className="portfolio-card">
+            <a
+              href="https://khatabook-clone-nb.netlify.app/"
+              className="portfolio-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="card" data-category="SEE LIVE">
+                <img src={udhariBook} className="card-img" alt="tracker" />
+              </div>
+              <div className="card-desc">
+                <h5 className="desc">
+                  UdhariBook using
+                  ReactJs,Material-ui,Redux,Express,MongoDB,PassportJs
+                </h5>
+              </div>
+            </a>
+          </div>
           <div className="portfolio-card">
             <a
               href="https://drag-drop-nb.netlify.app/"
